@@ -512,6 +512,9 @@ div.div_wrap {
     background-color: #f4f4f4;
     width: 37px;
 }
+table.ui-datepicker-calendar tr {
+    height: initial;
+}
 
 @media only screen and (max-width: 768px) {
     #content_wrap {

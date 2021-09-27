@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="jlab">
+    <meta name="keywords" content="키워드">
+    <meta name="description" content="사이트 설명">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="서서울도시고속도로">
+    <meta property="og:description" content="사이트 설명">
+    <meta property="og:image" content="/opengraph.jpg">
+    <meta property="og:url" content="http://wsue.com">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/colorbox.css" />
+    <link rel="stylesheet" type="text/css" href="./css/contents.css" />
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrapIn">
+            <div id="header">
+                <h1><a href="">GST</a></h1>
+                <a href="#" class="mobile_menu">menu</a>
+                <div id="gnb">
+                    <ul class="menu">
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="on"><a href="">교육관리</a>
+                            <ul class="sub">
+                                <li><a href="">교육관리</a></li>
+                                <li><a href="">참여관리</a></li>
+                                <li><a href="">교육장관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">진단 / 훈련관리</a></li>
+                        <li><a href="">커뮤니티</a></li>
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">기준정보관리</a></li>
+                        <li><a href="">시스템관리</a></li>
+                    </ul>
+                    <ul class="authentic">
+                        <li><a href="">마이페이지</a></li>
+                        <li><a href="">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="container">
+                <div id="lnb" class="forPC">
+                    <ul>
+                        <li class="on"><a href="">공지사항</a></li>
+                        <li><a href="">모집요강</a></li>
+                        <li><a href="">FeedBack</a></li>
+                        <li><a href="">쪽지</a></li>
+                    </ul>
+                </div>
+                <div id="content_wrap">
+                    <div id="contents">
+
+                        <div class="search">
+                            <ul class="ul_4col clearfix">
+                                <li class="th">받는이</li>
+                                <li class="td">김명희</li>
+                                <li class="th">보낸일자</li>
+                                <li class="td">2021.10.10</li>
+                            </ul>
+                        </div>
+
+                        <div class="search">
+                            <ul class="ul_2col clearfix">
+                                <li class="th">쪽지 내용</li>
+                                <li class="td">
+                                    <textarea name="" id="" rows="7">
+가정통신문 관련 장문 내용이 들어갑니다. 가정통신문 관련 장문 내용이 들어갑니다. 가정통신문 관련 장문 내용이 들어갑니다.
+가정통신문 관련 장문 내용이 들어갑니다. 가정통신문 관련 장문 내용이 들어갑니다. 가정통신문 관련 장문 내용이 들어갑니다.
+가정통신문 관련 장문 내용이 들어갑니다. 가정통신문 관련 장문 내용이 들어갑니다. 가정통신문 관련 장문 내용이 들어갑니다.
+                                </textarea>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="search">
+                            <ul class="ul_2col clearfix">
+                                <li class="th">첨부파일</li>
+                                <li class="td">
+                                    <div class="filebox">
+                                        <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+                                        <label for="file">파일찾기</label> 
+                                        <input type="file" id="file">    
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="btn_area">
+                            <button class="btn grey">닫기</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>
+                    <span>경기도 성남시 분당구 판교역로 230</span> <span>B동 313호 삼환하이펙스  <span class="forPC">|</span>  </span><span>대표전화 : 0000-0000  FAX : 000-0000-0000</span>
+                </p>
+                <ul>
+                    <li><a href="#">이용약관</a><span>|</span></li>
+                    <li><a href="#">개인정보처리방침</a><span>|</span></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.colorbox.js"></script>
+    <script>
+        $(function() {
+            $(".mobile_menu").on("click", function() {
+                jQuery.fx.off = true;
+                $(this).toggleClass("close");
+                $("#gnb").toggle();
+                $("#header #gnb ul.menu li.login").toggle();
+                $("#header #gnb ul.menu li ul.sub").toggle();
+            });
+            
+            // popup
+            $(".inline-popup").colorbox({
+                rel:'image_group', 
+                transition:"none", 
+                width:"80%", 
+                height:"70%"
+            });
+        });
+    </script>
+</body>
+</html>

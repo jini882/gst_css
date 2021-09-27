@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="jlab">
+    <meta name="keywords" content="키워드">
+    <meta name="description" content="사이트 설명">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="서서울도시고속도로">
+    <meta property="og:description" content="사이트 설명">
+    <meta property="og:image" content="/opengraph.jpg">
+    <meta property="og:url" content="http://wsue.com">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/contents.css" />
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrapIn">
+            <div id="header">
+                <h1><a href="">GST</a></h1>
+                <a href="#" class="mobile_menu">menu</a>
+                <div id="gnb">
+                    <ul class="menu">
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="on"><a href="">교육관리</a>
+                            <ul class="sub">
+                                <li><a href="">교육관리</a></li>
+                                <li><a href="">참여관리</a></li>
+                                <li><a href="">교육장관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">진단 / 훈련관리</a></li>
+                        <li><a href="">커뮤니티</a></li>
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">기준정보관리</a></li>
+                        <li><a href="">시스템관리</a></li>
+                    </ul>
+                    <ul class="authentic">
+                        <li><a href="">마이페이지</a></li>
+                        <li><a href="">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="container">
+                <div id="lnb" class="forPC">
+                    <ul>
+                        <li class="on"><a href="">교육관리</a></li>
+                        <li><a href="">참여관리</a></li>
+                        <li><a href="">교육장관리</a></li>
+                    </ul>
+                </div>
+                <div id="content_wrap">
+                    <div id="contents">
+                        
+                        <ul class="tb_tab clearfix">
+                            <li><a href="#">01 수업개설</a></li>
+                            <li class="on"><a href="#">02 시간표</a></li>
+                        </ul>
+
+                        <div class="tbl_wrap">
+                            <table class="timetable">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>일자</th>
+                                        <th>요일</th>
+                                        <th>시간</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><input type="text" placeholder="2020.10.10"></td>
+                                        <td>월요일</td>
+                                        <td>
+                                            <select name="" id="" class="sm">
+                                                <option value="">09:00</option>
+                                            </select> - 
+                                            <select name="" id="" class="sm">
+                                                <option value="">09:00</option>
+                                            </select>
+                                        </td>
+                                        <td><button class="btn white">삭제</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><input type="text" placeholder="2020.10.10"></td>
+                                        <td>월요일</td>
+                                        <td>
+                                            <select name="" id="" class="sm">
+                                                <option value="">09:00</option>
+                                            </select> - 
+                                            <select name="" id="" class="sm">
+                                                <option value="">09:00</option>
+                                            </select>
+                                        </td>
+                                        <td><button class="btn white">삭제</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="btn_area">
+                            <button class="btn grey">이전</button>
+                            <button class="btn">완료</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>
+                    <span>경기도 성남시 분당구 판교역로 230</span> <span>B동 313호 삼환하이펙스  <span class="forPC">|</span>  </span><span>대표전화 : 0000-0000  FAX : 000-0000-0000</span>
+                </p>
+                <ul>
+                    <li><a href="#">이용약관</a><span>|</span></li>
+                    <li><a href="#">개인정보처리방침</a><span>|</span></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+        
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".mobile_menu").on("click", function() {
+                jQuery.fx.off = true;
+                $(this).toggleClass("close");
+                $("#gnb").toggle();
+                $("#header #gnb ul.menu li.login").toggle();
+                $("#header #gnb ul.menu li ul.sub").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

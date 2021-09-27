@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="jlab">
+    <meta name="keywords" content="키워드">
+    <meta name="description" content="사이트 설명">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="서서울도시고속도로">
+    <meta property="og:description" content="사이트 설명">
+    <meta property="og:image" content="/opengraph.jpg">
+    <meta property="og:url" content="http://wsue.com">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/contents.css" />
+   
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrapIn">
+            <div id="header">
+                <h1><a href="">GST</a></h1>
+                <a href="#" class="mobile_menu">menu</a>
+                <div id="gnb">
+                    <ul class="menu">
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="on"><a href="">교육관리</a>
+                            <ul class="sub">
+                                <li><a href="">교육관리</a></li>
+                                <li><a href="">참여관리</a></li>
+                                <li><a href="">교육장관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">진단 / 훈련관리</a></li>
+                        <li><a href="">커뮤니티</a></li>
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">기준정보관리</a></li>
+                        <li><a href="">시스템관리</a></li>
+                    </ul>
+                    <ul class="authentic">
+                        <li><a href="">마이페이지</a></li>
+                        <li><a href="">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="container">
+                <div id="lnb" class="forPC">
+                    <ul>
+                        <li class="on"><a href="">교육관리</a></li>
+                        <li><a href="">참여관리</a></li>
+                        <li><a href="">교육장관리</a></li>
+                    </ul>
+                </div>
+                <div id="content_wrap">
+                    <div id="contents">
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>선택</th>
+                                    <th>수업명</th>
+                                    <th>수업구분</th>
+                                    <th>시작일자</th>
+                                    <th>종료일자</th>
+                                    <th>요일1</th>
+                                    <th>요일2</th>
+                                    <th>정원</th>
+                                    <th>신청인원</th>
+                                    <th>상세</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="" id="check1"><label for="check1"></label></td>
+                                    <td style="width: 200px">최대 열글자되는 수업</td>
+                                    <td>최대 다섯글자</td>
+                                    <td>2021.10.11</td>
+                                    <td>2021.11.11</td>
+                                    <td>월</td>
+                                    <td>화</td>
+                                    <td>20명</td>
+                                    <td>12명</td>
+                                    <td><button class="btn white">상세보기</button></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id="check2"><label for="check2"></label></td>
+                                    <td>최대 열글자 되는 수업</td>
+                                    <td>최대 다섯글자</td>
+                                    <td>2021.10.11</td>
+                                    <td>2021.11.11</td>
+                                    <td>월</td>
+                                    <td>화</td>
+                                    <td>20명</td>
+                                    <td>12명</td>
+                                    <td><button class="btn white">상세보기</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="paging">
+                            <button><</button>
+                            <span class="on">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <button>></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>
+                    <span>경기도 성남시 분당구 판교역로 230</span> <span>B동 313호 삼환하이펙스  <span class="forPC">|</span>  </span><span>대표전화 : 0000-0000  FAX : 000-0000-0000</span>
+                </p>
+                <ul>
+                    <li><a href="#">이용약관</a><span>|</span></li>
+                    <li><a href="#">개인정보처리방침</a><span>|</span></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".mobile_menu").on("click", function() {
+                jQuery.fx.off = true;
+                $(this).toggleClass("close");
+                $("#gnb").toggle();
+                $("#header #gnb ul.menu li.login").toggle();
+                $("#header #gnb ul.menu li ul.sub").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

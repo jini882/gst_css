@@ -1,0 +1,811 @@
+@import url(./common.css);
+
+#content_wrap {
+    padding: 48px 58px;
+    width: calc(100% - 243px); 
+}
+table {
+    display: table;
+    width: 100%;
+    font-size: 14px;
+    word-break: keep-all;
+}
+table tr {
+    height: 52px;
+}
+table tr:hover {
+    background-color: #edf4f8;
+}
+table th {
+    background-color: #f4f4f4;
+    font-weight: 500;
+    vertical-align: middle;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+table td {
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    padding: 8px 0 8px 10px;
+    /* font-size: 15px; */
+    font-size: 14px;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+table input[type="checkbox"] + label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+table input[type="checkbox"]:checked + label {
+    /* background-color: #1a73c4; */
+    background: url(../images/common/icon_checked.png) no-repeat;
+    background-size: 17px;
+    background-position: 50% 50%;
+    border: 2px solid #484848;
+}
+table input[type="checkbox"] {
+    display: none;
+}
+.paging {
+    margin-top: 61.5px;
+    text-align: center;
+    font-size: 14px;
+}
+.paging button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #d9d9d9;
+    margin-right: 10px;
+    color: #707070;
+}
+.paging span {
+    color: #aaaaaa;
+    /* font-weight: 700; */
+    padding-right: 10px;
+}
+.paging span.on {
+    color: #555555;
+    font-weight: 700;
+}
+.tb_tab li {
+    float: left;
+    height: 41px;
+    width: 50%;
+    border-bottom: 4px solid #b9d5ed;
+    margin-bottom: 50px;
+}
+.tb_tab li.on {
+    border-bottom: 4px solid #1a73c4;
+}
+.tb_tab li a {
+    display: block;
+    height: inherit;
+    font-size: 18px;
+    color: #999999;
+    font-weight: 500;
+}
+.tb_tab li.on a {
+    color: #333333;
+}
+/* ==============================================
+   교육관리02
+   ============================================== */
+ul.ul_4col {
+    /* display: table; */
+    width: 100%;
+}
+ul.ul_4col>li {
+    min-height: 51px;
+    float: left;
+    /* width: 50%; */
+    width: 100%;
+    border-top: 1px solid #dddddd;
+}
+ul.ul_4col>li>ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+ul.ul_4col>li:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+/* th / td */
+ul.ul_4col>li>ul>li {
+    display: table-cell;
+    vertical-align: top;
+    /* height: 51px; */
+}
+ul.ul_4col>li>ul>li.th {
+    background-color: #f4f4f4;
+    font-weight: 500;
+    font-size: 14px;
+    width: 140px;
+    line-height: 51px;
+    padding-left: 20px;
+}
+ul.ul_4col>li>ul>li.td {
+    /* width: -webkit-calc(50% - 280px);
+    width: -moz-calc(50% - 280px); */
+    /* width: calc(50% - 280px); */
+    /* width: 50%; */
+    padding: 7.5px 16px 0 20px;
+}
+ul.ul_4col>li>ul>li.td ul.persons {
+    margin-top: 10px;
+}
+ul.ul_4col>li>ul>li.td ul.persons li {
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+ul.persons li span.person {
+    display: inline-block;
+    padding: 0 38px 0 10px;
+    font-size: 14px;
+    color: #222222;
+    background-color: #f1f1f1;
+    border-radius: 18px;
+    height: 36px;
+    line-height: 36px;
+    
+}
+ul.persons li button.del {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;
+    border: 0;
+    outline: none;
+    background: #444444 url(../images/contents/btn_x_white.png) center center no-repeat;
+    margin-top: -12px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+/* =========
+popup
+===========*/
+#inline_content .title {
+    border-bottom: 1px solid #aaaaaa;
+    font-size: 18px;
+    color: #333333;
+    padding: 20px 30px;
+    font-weight: 400;
+}
+#inline_content .popup_content {
+    padding: 40px 60px;
+    font-size: 14px;
+}
+.search {
+    width: 100%;
+}
+.search ul {
+    width: 100%;
+}
+.search ul li {
+    float: left;
+    line-height: 52px;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.search li {
+    width: 10%;
+    box-sizing: border-box;
+}
+.search li.th {
+    background-color: #f4f4f4;
+    height: 52px;
+    line-height: 52px;
+    color: #333333;
+}
+.search li.input {
+    width: 35%;
+    color: #666666;
+}
+div.tbl_wrap {
+    margin-top: 20px;
+}
+#inline_content div.tbl_wrap {
+    margin-top: 0;
+}
+.search.join li.input {
+    width: 23.3%;
+}
+/* ==============================================
+교육장등록 popup
+============================================== */
+table.tb_2col th {
+    text-align: left;
+    padding-left: 21px;
+    width: 140px;
+    box-sizing: border-box;
+}   
+table.tb_2col td {
+    text-align: left;
+    padding-left: 20px;
+    border-top: 1px solid #dddddd;
+}
+table.tb_2col tr:hover {
+    background-color: initial;
+}
+/* ==============================================
+검사결과 관리
+============================================== */
+ul.ul_2col li.td {
+    width: calc(100% - 140px);   
+}
+ul.ul_4col {
+    /* display: table; */
+    margin-bottom: 20px;
+}
+ul.ul_4col li.th, ul.ul_2col li.th {
+    width: 140px;
+}
+.search ul.ul_4col li.td {
+    width: calc(50% - 140px);
+    padding: 0 16px 0 21px;
+}
+.search ul.ul_4col li {
+    border-bottom: none;
+}
+.search ul.ul_4col li:nth-last-child(-n+4) {
+    border-bottom: 1px solid #f4f4f4;
+}
+.search ul.ul_4col li input[type=text] {
+    width: 100%;
+}
+ul.ul_6col li.th {
+    width: 140px;
+}
+ul.ul_6col li.td {
+    width: calc(33.3% - 140px);
+    padding: 0 16px 0 21px;
+}
+li.td input[type=text] {
+    width: 100%;
+}
+
+.filebox .upload-name {
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 78%;
+    color: #999999;
+}
+.filebox label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+/* ==============================================
+임상소견관리 관리
+============================================== */
+.tbl_wrap.withPC {
+    margin-bottom: 20px;
+}
+.ul_16col {
+    width: 120%;
+}
+.ul_16col li {
+    float: left;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+.ul_16col li.th {
+    width: 10%;
+    font-weight: 500;
+    background-color: #f4f4f4;
+}
+.ul_16col li.td {
+    width: 15%;
+    padding: 0 8px;
+}
+.ul_16col li:nth-child(8n+1) {
+    clear: both;
+}
+
+.thumb_wrap a.thumb {
+    display: inline-block;
+    width: 136px;
+    height: 81px;
+    position: relative;
+    margin-top: 8px;
+}
+.thumb_wrap a.thumb img{
+    width: 136px;
+    height: 81px;
+}
+.thumb_wrap li {
+    float: left;
+    margin-right: 10px;
+}
+.thumb_wrap a.thumb .opacity {
+    display: inline-block;
+    width: 136px;
+    height: 81px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.thumb_wrap a.thumb.movie .opacity {
+    background-image: url("../images/contents/icon_play.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.thumb_wrap a.thumb .opacity.more {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 81px;
+    text-align: center;
+}
+.thumb_wrap a.thumb .del{
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    text-indent: 9999;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background: url(../images/contents/icon_delete.png) no-repeat;
+    background-size: 24px;
+    cursor: pointer;
+    
+}
+/* ==============================================
+colorbox image popup
+============================================== */
+img.cboxPhoto {
+    /* width: 100% !important;
+    height: 64.6% !important; */
+    /* max-width: 813px; */
+    width: 813px !important;
+    height: 526px !important;
+    height: initial !important;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin-top: 20px !important;
+}
+#cboxNext {
+    background: url("../images/contents/icon_next.png") no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+}
+#cboxNext {
+    background: url("../images/contents/icon_next.png") no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+}
+#cboxPrevious {
+    background: url("../images/contents/icon_prev.png") no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+}
+#cboxTitle {
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    top: 0;
+    box-sizing: border-box;
+}
+#cboxCurrent {
+    display: none !important;
+}
+/* ==============================================
+사용자관리
+============================================== */
+input[type=radio] + label {
+    vertical-align: middle;
+    padding: 0 35px 0 9px;
+}
+th.required {
+    background: #f4f4f4 url(../images/contents/icon_required.png) no-repeat;
+    background-position: 20px 21px;
+    background-size: 7px;
+}
+p label.required {
+    background: url(../images/contents/icon_required.png) no-repeat;
+    background-position: 0 4px;
+    padding-left: 10px;
+    background-size: 7px;
+}
+table.member th {
+    padding-left: 32px;
+}
+p.caption {
+    text-align: right;
+    color: #666666;
+    font-size: 14px;
+    padding-bottom: 11.5px;
+}
+/* ==============================================
+기관관리
+============================================== */
+table.organ input[type=text] {
+    width: 100%;
+}
+table.organ input[type=text].addr {
+    width: calc(100% - 74px);
+}
+/* ==============================================
+권한관리
+============================================== */
+div.l_div {
+    float: left;
+    width: calc(50% - 5px);
+    margin-right: 5px;
+}
+div.r_div {
+    float: right;
+    width: calc(50% - 5px);
+    margin-left: 5px;
+}
+div.div_wrap {
+    overflow: auto;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #aaa;
+}
+/* ==============================================
+진단훈련관리 업로드
+============================================== */
+.ul_excel {
+    width: 200%;
+}
+.ul_excel li {
+    float: left;
+    width: calc((100% - 37px)/9);
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border: 0.5px solid #ddd;
+}
+.ul_excel li:nth-child(10n+1) { 
+    clear: both;
+}
+.ul_excel li:nth-child(-n + 10) { 
+    background-color: #f4f4f4;
+}
+.ul_excel li:nth-child(10n+1) {
+    background-color: #f4f4f4;
+    width: 37px;
+}
+
+@media only screen and (max-width: 768px) {
+    #content_wrap {
+        padding: 40px 0 0 0;
+        width: 100%;
+    }
+    table {
+        /* display: block; */
+        display: table;
+        /* width: 400px; */
+        overflow: scroll; 
+    }
+    table td {
+        padding: 5px 0 5px 5px;
+        font-size: 14px;
+    }
+
+    /* ==============================================
+    교육관리02
+    ============================================== */
+    ul.ul_4col>li {
+        width: 100%;
+        border: none;
+    }
+    ul.ul_4col>li>ul>li {
+        display: block;
+        float: left;
+        border-top: 1px solid #dddddd;
+    }
+    ul.ul_4col>li>ul>li.th {
+        width: 100px;
+    }
+    ul.ul_4col>li>ul>li.td {
+        width: calc(100% - 100px);
+        /* padding: 6px 8px; */
+        padding: 6px 0 6px 8px;
+    }
+    /* .table-cell-after {
+        clear: both;
+        display: block;
+        content: "";
+        float: left;
+    } */
+    /* ul.ul_4col>li>ul>li.table-cell::after {
+        display: table-cell;
+        float: initial; 
+    } */
+    /* ul.ul_4col>li>ul>li.table-cell {
+        display: table-cell;
+        float: initial;
+    } */
+    /* =========
+    popup
+    ===========*/
+    #inline_content .title {
+        padding: 10px 10px 17.5px 10px;
+    }
+    #inline_content .popup_content {
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .search ul li {
+        padding-left: 5px;
+    }
+    .search li.th {
+        width: 80px;
+        padding-left: 13px;
+    }
+    .search li.input, .search.join li.input  {
+        width: calc(100% - 80px);
+    }
+    .search li:last-child {
+        width: 100%;
+        text-align: center;
+        /* border-bottom: none; */
+    }
+    .search.join li:last-child {
+        width: calc(100% - 100px);
+        border-bottom: 1px solid #f4f4f4;
+        text-align: left;
+    }
+    .btn_area button.btn {
+        padding: 11px 21px;
+    }
+    
+    /* ==============================================
+    교육관리03
+    ============================================== */
+    table.timetable {
+        width: 675px;
+    }
+    table td:nth-child(1) {
+        width: 40px;
+    }
+    table.timetable td:nth-child(2) {
+        width: 150px;
+    }
+    table.timetable td:nth-child(3) {
+        width: 80px;
+    }
+    table.timetable td:nth-child(4) {
+        width: 310px;
+    }
+    table.timetable td:nth-child(5) {
+        width: 95px;
+    }
+    /* ==============================================
+    교육장관리01
+    ============================================== */
+    table.place {
+        width: 680px;
+    }
+    table.place td:nth-child(2) {
+        width: 100px;
+    }
+    table.place td:nth-child(3) {
+        width: 200px;
+    }
+    table.place td:nth-child(4) {
+        width: 120px;
+    }
+    table.place td:nth-child(5) {
+        width: 90px;
+    }
+    table.place td:nth-child(6) {
+        width: 130px;
+    }
+    /* ==============================================
+    교육장등록 popup
+    ============================================== */
+    table.tb_2col {
+        display: table;
+    }
+    table.tb_2col th {
+        padding-left: 9px;
+        width: 90px;
+        line-height: 17px;
+    }   
+    table.tb_2col td {
+        text-align: left;
+        padding-left: 5px;
+    }
+    table.tb_2col tr:hover {
+        background-color: initial;
+    }
+    table.tb_2col input[type=text].sm {
+        width: 31.7% !important;
+    }
+    table.tb_2col input[type=text].addr {
+        width: calc(100% - 70px) !important;
+    }
+    /* ==============================================
+    검사결과 관리
+    ============================================== */
+    .search ul.ul_4col li {
+        border-top: 1px solid #f4f4f4;
+    }
+    .search ul.ul_4col li:nth-last-child(-n+2) {
+        border-bottom: 1px solid #f4f4f4;
+    }
+    .search ul.ul_4col li.th, .search ul.ul_2col li.th {
+        width: 90px;
+    }
+    .search ul.ul_4col li.td, .search ul.ul_2col li.td {
+        width: calc(100% - 90px);
+        padding: 0 0 0 8px;
+    }
+    .search ul.ul_4col li.td:last-child {
+        text-align: left;
+    }
+    .filebox label {
+        padding: 10px;
+        margin-left: 0;
+    }
+    .filebox .upload-name {
+        width: calc(100% - 74px);
+    }
+    ul.ul_6col {
+        width: 140%;
+    }
+    ul.ul_6col li.th {
+        width: 90px;
+    }
+    ul.ul_6col li.td {
+        width: calc(50% - 90px);
+        padding: 0 8px 0 8px;
+    }
+    li.td input[type=text] {
+        width: 100%;
+    }
+    /* ==============================================
+    colorbox image popup
+    ============================================== */
+    #colorbox {
+        left: 0 !important;
+        width: 100% !important;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    #cboxWrapper {
+        width: 100% !important;
+        position: relative !important;
+    }
+    #cboxContent {
+        width: 100% !important;
+    }
+    #cboxLoadedContent {
+        width: 100% !important;
+    }
+    img.cboxPhoto {
+        width: calc(100% - 20px) !important
+    }
+    #cboxPrevious {
+        background-size: 35px;
+        width: 35px;
+        height: 35px;
+        top: initial;
+        bottom: 10px;
+        left: initial;
+        right: 55px;
+    }
+    #cboxNext {
+        background-size: 35px;
+        width: 35px;
+        height: 35px;
+        top: initial;
+        bottom: 10px;
+        right: 10px; 
+    }
+    /* ==============================================
+    임상소견관리 관리
+    ============================================== */
+    .ul_16col li:nth-child(4n+1) {
+        clear: both;
+    }
+    .ul_16col li.th {
+        width: 25%;
+    }
+    .ul_16col li.td {
+        width: 25%;
+    }
+
+    /* ==============================================
+    쪽지
+    ============================================== */
+    table.memo {
+        width: 780px;
+    }
+    table th.w80 {
+        width: 80px;
+    }
+    table th.w90 {
+        width: 90px;
+    }
+    table th.w100 {
+        width: 100px;
+    }
+    table th.w150 {
+        width: 150px;
+    }
+    table th.w250 {
+        width: 250px;
+    }
+    table.manger {
+        width: 670px;
+    }
+    /* ==============================================
+    사용자관리
+    ============================================== */
+    table.tb_2col.member td input[type=text].userid {
+        width: calc(100% - 77px) !important;
+    }
+    table.tb_2col.member td input[type=text].addr {
+        width: calc(100% - 53px) !important;
+    }
+    th.required {
+        background-position: 0 21px;
+    }
+    /* ==============================================
+    사용자관리
+    ============================================== */
+    table.organ {
+        width: 220%;
+    }
+    /* ==============================================
+    권한관리
+    ============================================== */
+    div.l_div {
+        width: 100%;
+        margin-right: 0;
+    }
+    div.r_div {
+        width: 100%;
+        margin-left: 0;
+    }    
+    
+}

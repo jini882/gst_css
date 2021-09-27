@@ -1,0 +1,298 @@
+@import url(./common.css);
+
+.container_wrap.login, .container_wrap.searchId {
+    position: absolute;
+    top: calc((100% - 185px) / 2);
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.container_wrap.login {
+    width: 487px;
+}
+p.title {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #333333;
+    font-weight: 300;
+}
+p.exp {
+    font-size: 16px;
+    padding-bottom: 20.5px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 52.5px;
+}
+.login_box {
+    margin-bottom: 43px;
+    overflow: auto;
+}
+.login_box ul {
+    float: left;
+}
+.login_box input {
+    border: 1px solid #dddddd;
+    font-size: 16px;
+    color: #999999;
+    width: 380px;
+    height: 46px;
+    padding: 17px 14px;
+    margin: 0 10px 5px 0;
+}
+.login_box button {
+    float: left;
+    background-color: #1a73c4;
+    color: #ffffff;
+    width: 97px;
+    height: 97px;
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+}
+.find_wrap li {
+    float: left;
+}
+.find_wrap li a {
+    font-size: 16px;
+    color: #333333;
+}
+.find_wrap li span {
+    padding: 0 10px;
+    color: #aaaaaa;
+}
+
+/* ==============================================
+   회원가입
+   ============================================== */
+.container_wrap.register {
+    width: 690px;
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+    /* position: relative;
+    top: initial;
+    left: initial;
+    transform: initial; */
+    margin: 79px auto 0 auto;
+}
+.register_step li {
+    float: left;
+    width: 230px;
+    height: 64px;
+    background-color: #b9d5ed;
+    margin-bottom: 40px;
+    border-right: 1px solid #ffffff;
+}
+.register_step li a {
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    line-height: 64px;
+    height: inherit;
+    text-align: center;
+}
+.register_step li.on {
+    background-color: #1a73c4;
+    border-right: 1px solid #1a73c4;
+    margin-left: -1px;
+}
+.term_box {
+    width: 100%;
+    height: 109px;
+    overflow:scroll;
+    border: 1px solid #dddddd;
+    padding: 20px 25px;
+    line-height: 22px;
+}
+.term_agree {
+    width: 100%;
+    height: 41px;
+    border: 1px solid #dddddd;
+    border-top: none;
+    margin-bottom: 10px;
+    padding: 9px 25px;
+}
+.term_agree input[id="term"] + label, .term_agree input[id="information"] + label {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+.term_agree input[id="term"]:checked + label, .term_agree input[id="information"]:checked + label {
+    background-color: #1a73c4;
+}
+.term_agree input[id="term"], .term_agree input[id="information"] {
+    display: none;
+}
+.text_label {
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 21px;
+    margin-left: 7.5px;
+}
+form label.required {
+    background: url(../images/contents/icon_required.png) no-repeat;
+    background-position: left 23px;
+    background-size: 7px;
+}
+form p label.required {
+    background-position: 0 4px;
+    padding-left: 10px;
+}
+form p.caption {
+    text-align: right;
+    color: #666666;
+}
+form ul {
+    border-top: 1px solid #333333;
+    margin-top: 14.6px;
+}
+form ul li {
+    height: 58px;
+    border-bottom: 1px solid #cccccc;
+}
+form  ul li label {
+    display: inline-block;
+    width: 110px;
+    height: inherit;
+    font-size: 14px;
+    color: #333333;
+    line-height: 53px;
+    padding-left: 14px;
+}
+form ul li div label {
+    display: inline;
+    vertical-align: middle;
+    padding: 0 35px 0 9px;
+}
+form ul li div {
+    display: inline-block;
+    height: inherit;
+}
+/* form ul li div select {  
+    border: 1px solid #dddddd;
+    height: 36px;
+    width: 250px;
+    color: #999999;
+    padding: 0 10px;
+    font-size: 14px;
+}
+select::-ms-expand {
+    display: none;
+} */
+form ul li div button {
+    border: 1px solid #999999;
+    height: 36px;
+    font-size: 14px;
+    color: #555555;
+    padding: 0 23px;
+    margin-left: 5px;
+    background-color: #ffffff;
+}
+form ul li div span {
+    display: inline-block;
+    padding: 0 36px 0 12px;
+}
+.container_wrap.register .addAticle {
+    padding: 20.5px 0 60.5px 0;
+    border-bottom: 1px solid #333333; 
+    text-align: right;
+}
+/* ==============================================
+   아이디 찾기
+   ============================================== */
+.container_wrap.searchId {
+    width: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container_wrap.register {
+        width: 100%;
+    }
+    .container_wrap.login, .container_wrap.searchId {
+        width: 100%;
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: initial;
+        margin-top: 30px;
+    }
+    p.title {
+        font-size: 26px;
+    }
+    p.exp {
+        font-size: 14px;
+        margin-bottom: 40.5px;
+    }
+    .login_box input {
+        width: 246px;
+        height: 40px;
+        font-size: 14px;
+        margin: 0 6px 3px 0;
+    }
+    .login_box button {
+        width: 83px;
+        height: 83px;
+        font-size: 16px;
+    }
+    .find_wrap li a {
+        font-size: 14px;
+    }
+    #footer {
+        display: block;
+    }
+
+    /* ==============================================
+    회원가입 mobile
+    ============================================== */
+    .register_step li {
+        width: 33.3%;
+        height: 48px;
+        margin-bottom: 30px;
+    }
+    .register_step li a {
+        font-size: 14px;
+        line-height: 48px;
+    }
+    .term_box {
+        height: 209px;
+        padding: 5%;
+    }
+    .term_agree {
+        color: #222222;
+        padding: 4% 5%;
+        height: 51px;
+    }
+    p.title {
+        margin-bottom: 22px;
+    }
+    form ul li {
+        height: 52px;
+    }
+    form ul  li label {
+        width: 30%;
+        padding-left: 10px;
+    }
+    form ul li div {
+        width: 68%;
+    }
+    form ul li input[type=text].userid {
+        width: calc(100% - 77px);
+    }
+    form ul li div button {
+        height: 40px;
+        vertical-align: bottom;
+        margin-left: 0;
+        padding: 0;
+    }
+    form ul li input[type=text].addr {
+        width: calc(100% - 53px);
+    }
+    /* form ul li div select {
+        width: 100%;
+    } */
+
+    form ul li div span {
+        display: none;
+    }
+
+}

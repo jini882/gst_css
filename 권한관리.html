@@ -25,23 +25,23 @@
                 <a href="#" class="mobile_menu">menu</a>
                 <div id="gnb">
                     <ul class="menu">
-                        <li class="login"><a href="">로그인</a></li>
-                        <li class="on"><a href="">교육관리</a>
+                        <li class="login"><a href="#">로그인</a></li>
+                        <li class="on"><a href="#">교육관리</a>
                             <ul class="sub">
-                                <li><a href="">교육관리</a></li>
-                                <li><a href="">참여관리</a></li>
-                                <li><a href="">교육장관리</a></li>
+                                <li><a href="#">교육관리</a></li>
+                                <li><a href="#">참여관리</a></li>
+                                <li><a href="#">교육장관리</a></li>
                             </ul>
                         </li>
-                        <li><a href="">진단 / 훈련관리</a></li>
-                        <li><a href="">커뮤니티</a></li>
-                        <li><a href="">사용자관리</a></li>
-                        <li><a href="">기준정보관리</a></li>
-                        <li><a href="">시스템관리</a></li>
+                        <li><a href="#">진단 / 훈련관리</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">사용자관리</a></li>
+                        <li><a href="#">기준정보관리</a></li>
+                        <li><a href="#">시스템관리</a></li>
                     </ul>
                     <ul class="authentic">
-                        <li><a href="">마이페이지</a></li>
-                        <li><a href="">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                                     <button class="btn sm white">저장</button>
                                 </div>
 
-                                <table>
+                                <table class="list">
                                     <colgroup>
                                         <col style="width: 30%">
                                         <col style="width: 30%">
@@ -90,18 +90,42 @@
                                         <tr>
                                             <td>메뉴 ID</td>
                                             <td>메뉴명</td>
-                                            <td><input type="radio" name="act" id="act"></td>
-                                            <td><input type="radio" name="act" id="act"></td>
-                                            <td><input type="radio" name="act" id="act"></td>
-                                            <td><input type="radio" name="act" id="act"></td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>메뉴 ID</td>
                                             <td>메뉴명</td>
-                                            <td><input type="radio" name="act" id="act"></td>
-                                            <td><input type="radio" name="act" id="act"></td>
-                                            <td><input type="radio" name="act" id="act"></td>
-                                            <td><input type="radio" name="act" id="act"></td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" name="" id="check2">
+                                                <label for="check2"></label>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -113,7 +137,7 @@
                                     <button class="btn sm grey">삭제</button>
                                 </div>
                                 <div class="tbl_wrap">
-                                    <table class="organ">
+                                    <table class="list organ">
                                         <colgroup>
                                             <col>
                                             <col>
@@ -172,6 +196,11 @@
                 $("#gnb").toggle();
                 $("#header #gnb ul.menu li.login").toggle();
                 $("#header #gnb ul.menu li ul.sub").toggle();
+                $('body').addClass('noScroll');
+            });
+            $(".menu>li").on("click", function() {
+                $(this).children(".sub").toggle();
+                $(this).toggleClass("on");
             });
         });
     </script>

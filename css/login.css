@@ -167,6 +167,7 @@ form ul li div label {
 form ul li div {
     display: inline-block;
     height: inherit;
+    min-width: 250px;
 }
 /* form ul li div select {  
     border: 1px solid #dddddd;

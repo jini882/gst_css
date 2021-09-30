@@ -41,5 +41,5 @@
         #cboxPrevious:hover{background-position:bottom left;}
         #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
         #cboxNext:hover{background-position:bottom right;}
-        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(../images/common/icon_close.png) no-repeat; background-position:0 7px; background-size: 15px; width:20px; height:30px; text-indent:-9999px;}
+        #cboxClose{position:absolute; top:10px; right:10px; display:block; background:url(../images/common/icon_close.png) no-repeat; background-position:0 7px; background-size: 15px; width:20px; height:30px; text-indent:-9999px;}
         /* #cboxClose:hover{background-position:bottom center;} */

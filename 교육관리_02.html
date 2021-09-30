@@ -26,23 +26,23 @@
                 <a href="#" class="mobile_menu">menu</a>
                 <div id="gnb">
                     <ul class="menu">
-                        <li class="login"><a href="">로그인</a></li>
-                        <li class="on"><a href="">교육관리</a>
+                        <li class="login"><a href="#">로그인</a></li>
+                        <li class="on"><a href="#">교육관리</a>
                             <ul class="sub">
-                                <li><a href="">교육관리</a></li>
-                                <li><a href="">참여관리</a></li>
-                                <li><a href="">교육장관리</a></li>
+                                <li><a href="#">교육관리</a></li>
+                                <li><a href="#">참여관리</a></li>
+                                <li><a href="#">교육장관리</a></li>
                             </ul>
                         </li>
-                        <li><a href="">진단 / 훈련관리</a></li>
-                        <li><a href="">커뮤니티</a></li>
-                        <li><a href="">사용자관리</a></li>
-                        <li><a href="">기준정보관리</a></li>
-                        <li><a href="">시스템관리</a></li>
+                        <li><a href="#">진단 / 훈련관리</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">사용자관리</a></li>
+                        <li><a href="#">기준정보관리</a></li>
+                        <li><a href="#">시스템관리</a></li>
                     </ul>
                     <ul class="authentic">
-                        <li><a href="">마이페이지</a></li>
-                        <li><a href="">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -115,10 +115,7 @@
                                 
                                     <li class="th">임상의</li>
                                     <li class="td">
-                                        <button class="btn white sm inline-popup" href="#inline_content">선택</button>
-                                        <ul class="persons" style="display:none;">
-                                            <li></li>
-                                        </ul>
+                                        <input type="text" class="searchInput" value="김이나" readonly><button class="btn white sm inline-popup" href="#inline_content">선택</button>
                                     </li>
                                 </ul>
                             </li>
@@ -131,23 +128,7 @@
                                 
                                     <li class="th table-cell">검사자</li>
                                     <li class="td table-cell">
-                                        <button class="btn white sm inline-popup" href="#inline_content">선택</button>
-                                        <ul class="persons">
-                                            <li><span class="person">김이나</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김현수</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김이나</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김현수</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김이나</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김현수</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김이나</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김현수</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김이나</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김현수</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김이나</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김현수</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김이나</span><button class="del">Delete</button></li>
-                                            <li><span class="person">김현수</span><button class="del">Delete</button></li>
-                                        </ul>
+                                        <input type="text" class="searchInput" value="김이나" readonly><button class="btn white sm inline-popup" href="#inline_content">선택</button>
                                     </li>
                                 </ul>
                             </li>
@@ -162,7 +143,7 @@
                                 
                                     <li class="th">검사자</li>
                                     <li class="td">
-                                        <button class="btn white sm inline-popup" href="#inline_content">선택</button>
+                                        <input type="text" class="searchInput" value="김이나" readonly><button class="btn white sm inline-popup" href="#inline_content">선택</button>
                                     </li>
                                 </ul>
                             </li>
@@ -206,17 +187,27 @@
                 <div class="title">임상의 or 검사자 목록</div>
                 <div class="popup_content">
                     <div class="search">
-                        <ul class="clearfix">
+                        <ul class="ul_5col clearfix">
                             <li class="th">성명</li>
-                            <li class="input"><input type="text"></li>
+                            <li class="td"><input type="text"></li>
                             <li class="th">소속</li>
-                            <li class="input"><input type="text"></li>
-                            <li><button class="btn grey sm">조회하기</button></li>
+                            <li class="td"><input type="text"></li>
+                            <li class="control"><button class="btn grey sm">조회하기</button></li>
                         </ul>
                     </div>
 
                     <div class="tbl_wrap">
                         <table>
+                            <colgroup>
+                                <col style="width: 5%">
+                                <col style="width: 15%">
+                                <col style="width: 5%">
+                                <col style="width: 15%">
+                                <col style="width: 15%">
+                                <col style="width: 5%">
+                                <col style="width: 19%">
+                                <col style="width: 19%">
+                            </colgroup>
                             <thead>
                                 <tr>
                                     <th>선택</th>
@@ -321,45 +312,7 @@
                                     <td>010-1111-2222</td>
                                     <td>abc@abc.com</td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="" id="check2">
-                                        <label for="check2"></label>
-                                    </td>
-                                    <td>김이나</td>
-                                    <td>여</td>
-                                    <td>2011.01.01</td>
-                                    <td>김석훈</td>
-                                    <td>남</td>
-                                    <td>010-1111-2222</td>
-                                    <td>abc@abc.com</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="" id="check2">
-                                        <label for="check2"></label>
-                                    </td>
-                                    <td>김이나</td>
-                                    <td>여</td>
-                                    <td>2011.01.01</td>
-                                    <td>김석훈</td>
-                                    <td>남</td>
-                                    <td>010-1111-2222</td>
-                                    <td>abc@abc.com</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="" id="check2">
-                                        <label for="check2"></label>
-                                    </td>
-                                    <td>김이나</td>
-                                    <td>여</td>
-                                    <td>2011.01.01</td>
-                                    <td>김석훈</td>
-                                    <td>남</td>
-                                    <td>010-1111-2222</td>
-                                    <td>abc@abc.com</td>
-                                </tr>
+                                
                                 <tr>
                                     <td>
                                         <input type="checkbox" name="" id="check2">
@@ -405,10 +358,15 @@
                 $("#gnb").toggle();
                 $("#header #gnb ul.menu li.login").toggle();
                 $("#header #gnb ul.menu li ul.sub").toggle();
+                $('body').addClass('noScroll');
+            });
+            $(".menu>li").on("click", function() {
+                $(this).children(".sub").toggle();
+                $(this).toggleClass("on");
             });
 
             // popup
-            $(".inline-popup").colorbox({inline:true, transition:"none", width:"90%", height:"70%"});
+            $(".inline-popup").colorbox({inline:true, transition:"none", width:"90%", height:"80%"});
         });
     </script>
 </body>

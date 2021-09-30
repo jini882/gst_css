@@ -26,23 +26,23 @@
                 <a href="#" class="mobile_menu">menu</a>
                 <div id="gnb">
                     <ul class="menu">
-                        <li class="login"><a href="">로그인</a></li>
-                        <li class="on"><a href="">교육관리</a>
+                        <li class="login"><a href="#">로그인</a></li>
+                        <li class="on"><a href="#">교육관리</a>
                             <ul class="sub">
-                                <li><a href="">교육관리</a></li>
-                                <li><a href="">참여관리</a></li>
-                                <li><a href="">교육장관리</a></li>
+                                <li><a href="#">교육관리</a></li>
+                                <li><a href="#">참여관리</a></li>
+                                <li><a href="#">교육장관리</a></li>
                             </ul>
                         </li>
-                        <li><a href="">진단 / 훈련관리</a></li>
-                        <li><a href="">커뮤니티</a></li>
-                        <li><a href="">사용자관리</a></li>
-                        <li><a href="">기준정보관리</a></li>
-                        <li><a href="">시스템관리</a></li>
+                        <li><a href="#">진단 / 훈련관리</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">사용자관리</a></li>
+                        <li><a href="#">기준정보관리</a></li>
+                        <li><a href="#">시스템관리</a></li>
                     </ul>
                     <ul class="authentic">
-                        <li><a href="">마이페이지</a></li>
-                        <li><a href="">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -151,10 +151,10 @@
                                 <th>교육사진첨부</th>
                                 <td>
                                     <ul class="thumb_wrap">
-                                        <li><a href="./images/contents/thumb_sample.png" class="thumb inline-popup" title="교육사진"><img src="./images/contents/thumb_sample.png" alt=""></a></li>
-                                        <li style="display: none;"><a href="./images/contents/thumb_sample2.png" class="thumb inline-popup" title="교육사진"><img src="./images/contents/thumb_sample2.png" alt=""></a></li>
-                                        <li><a href="./images/contents/thumb_sample3.png" class="thumb inline-popup" title="교육사진"><img src="./images/contents/thumb_sample3.png" alt=""></a></li>
-                                        <li><a href="./images/contents/thumb_sample.png" class="thumb inline-popup" title="교육사진"><span class="opacity more">+ 10</span><img src="./images/contents/thumb_sample.png" alt=""></a></li>
+                                        <li><a href="./images/contents/thumb_sample.png" class="thumb image_group" title="교육사진"><img src="./images/contents/thumb_sample.png" alt=""></a></li>
+                                        <li style="display: none;"><a href="./images/contents/thumb_sample2.png" class="thumb image_group" title="교육사진"><img src="./images/contents/thumb_sample2.png" alt=""></a></li>
+                                        <li><a href="./images/contents/thumb_sample3.png" class="thumb image_group" title="교육사진"><img src="./images/contents/thumb_sample3.png" alt=""></a></li>
+                                        <li><a href="./images/contents/thumb_sample.png" class="thumb image_group" title="교육사진"><span class="opacity more">+ 10</span><img src="./images/contents/thumb_sample.png" alt=""></a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -190,10 +190,15 @@
                 $("#gnb").toggle();
                 $("#header #gnb ul.menu li.login").toggle();
                 $("#header #gnb ul.menu li ul.sub").toggle();
+                $('body').addClass('noScroll');
+            });
+            $(".menu>li").on("click", function() {
+                $(this).children(".sub").toggle();
+                $(this).toggleClass("on");
             });
             
             // popup
-            $(".inline-popup").colorbox({
+            $(".image_group").colorbox({
                 rel:'image_group', 
                 transition:"none", 
                 width:"80%", 

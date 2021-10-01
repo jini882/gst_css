@@ -1,5 +1,9 @@
 @import url(./common.css);
 
+input[type=text] {
+    width: 250px;
+    vertical-align: baseline;
+}
 .container_wrap.login, .container_wrap.searchId {
     position: absolute;
     top: calc((100% - 185px) / 2);
@@ -129,28 +133,28 @@ p.exp {
     height: 21px;
     margin-left: 7.5px;
 }
-form label.required {
+.register form label.required {
     background: url(../images/contents/icon_required.png) no-repeat;
     background-position: left 23px;
     background-size: 7px;
 }
-form p label.required {
+.register form p label.required {
     background-position: 0 4px;
     padding-left: 10px;
 }
-form p.caption {
+.register form p.caption {
     text-align: right;
     color: #666666;
 }
-form ul {
+.register form ul {
     border-top: 1px solid #333333;
     margin-top: 14.6px;
 }
-form ul li {
+.register form ul li {
     height: 58px;
     border-bottom: 1px solid #cccccc;
 }
-form  ul li label {
+.register form  ul li label {
     display: inline-block;
     width: 110px;
     height: inherit;
@@ -159,15 +163,16 @@ form  ul li label {
     line-height: 53px;
     padding-left: 14px;
 }
-form ul li div label {
+.register form ul li div label {
     display: inline;
     vertical-align: middle;
     padding: 0 35px 0 9px;
 }
-form ul li div {
+.register form ul li div {
     display: inline-block;
     height: inherit;
     min-width: 250px;
+    width: calc(100% - 115px);
 }
 /* form ul li div select {  
     border: 1px solid #dddddd;
@@ -180,7 +185,7 @@ form ul li div {
 select::-ms-expand {
     display: none;
 } */
-form ul li div button {
+.register form ul li div button {
     border: 1px solid #999999;
     height: 36px;
     font-size: 14px;
@@ -189,7 +194,7 @@ form ul li div button {
     margin-left: 5px;
     background-color: #ffffff;
 }
-form ul li div span {
+.register form ul li div span {
     display: inline-block;
     padding: 0 36px 0 12px;
 }
@@ -206,16 +211,20 @@ form ul li div span {
 }
 
 @media only screen and (max-width: 768px) {
+    .container_wrap {
+        padding: 0 15px;
+    }
     .container_wrap.register {
         width: 100%;
+        margin-top: 40px;
     }
     .container_wrap.login, .container_wrap.searchId {
         width: 100%;
-        position: relative;
+        position: inherit;
         top: initial;
         left: initial;
         transform: initial;
-        margin-top: 30px;
+        margin-top: 60px;
     }
     p.title {
         font-size: 26px;
@@ -266,33 +275,33 @@ form ul li div span {
     p.title {
         margin-bottom: 22px;
     }
-    form ul li {
+    .register form ul li {
         height: 52px;
     }
-    form ul  li label {
-        width: 30%;
+    .register form ul  li label {
+        width: 90px;
         padding-left: 10px;
     }
-    form ul li div {
-        width: 68%;
+    .register form ul li div {
+        width: calc(100% - 100px);
     }
-    form ul li input[type=text].userid {
+    .register form ul li input[type=text].userid {
         width: calc(100% - 77px);
     }
-    form ul li div button {
-        height: 40px;
+    .register form ul li div button {
+        height: 36px;
         vertical-align: bottom;
         margin-left: 0;
         padding: 0;
     }
-    form ul li input[type=text].addr {
+    .register form ul li input[type=text].addr {
         width: calc(100% - 53px);
     }
     /* form ul li div select {
         width: 100%;
     } */
 
-    form ul li div span {
+    .register form ul li div span {
         display: none;
     }
 

@@ -175,11 +175,14 @@ popup
 #inline_content .title {
     position: fixed;
     width: 100%;
+    height: 59px;
+    box-sizing: border-box;
     border-bottom: 1px solid #aaaaaa;
     font-size: 18px;
     color: #333333;
     padding: 20px 30px;
     font-weight: 400;
+    background-color: #fff;
 }
 #inline_content .popup_content {
     padding: 80px 60px 40px 60px;
@@ -282,9 +285,6 @@ ul.ul_6col li.td {
     width: calc(33.3% - 140px);
     padding: 8px 0 7px 20px
 }
-
-
-
 .filebox .upload-name {
     display: inline-block;
     height: 36px;
@@ -410,6 +410,13 @@ img.cboxPhoto {
     transform: translate(-50%, -50%);
     margin-top: 20px !important;
 }
+#cboxContent {
+    width: 100%;
+    background: #fff;
+}
+#cboxLoadedContent {
+    border: none;
+}
 #cboxNext {
     background: url("../images/contents/icon_next.png") no-repeat;
     background-size: 50px;
@@ -526,6 +533,12 @@ div.div_wrap {
 table.ui-datepicker-calendar tr {
     height: initial;
 }
+.l_div .ul_2col li, .r_div .ul_2col li {
+    border-bottom: none;
+}
+.l_div .ul_2col li:nth-last-child(-n+2), .r_div .ul_2col li:nth-last-child(-n+2) {
+    border-bottom: 1px solid #ddd;
+}
 
 @media only screen and (max-width: 768px) {
     #content_wrap {
@@ -543,7 +556,6 @@ table.ui-datepicker-calendar tr {
         font-size: 14px;
         height: 52px;
     }
-
     /* ==============================================
     교육관리02
     ============================================== */
@@ -562,14 +574,27 @@ table.ui-datepicker-calendar tr {
         width: calc(100% - 100px);
         padding: 8px 0 8px 8px;
     }
+    #inline_content table {
+        width: 200%;            /* 교육관리02 팝업 */
+    }
+    .l_div .ul_2col .th, .r_div .ul_2col .th {
+        padding: 7px 0 0 0;
+        text-align: center;
+    }
+    
     /* =========
     popup
     ===========*/
     #inline_content .title {
         padding: 10px 10px 17.5px 10px;
+        height: 45px;
     }
     #inline_content .popup_content {
         padding: 60px 10px 20px 10px;
+        box-sizing: border-box;
+    }
+    #inline_content .popup_alert {
+        padding: 30px 60px;
         box-sizing: border-box;
     }
     .search ul li {
@@ -719,6 +744,7 @@ table.ui-datepicker-calendar tr {
     }
     #cboxContent {
         width: 100% !important;
+        background: #fff;
     }
     #cboxLoadedContent {
         width: 100% !important;
@@ -818,5 +844,8 @@ table.ui-datepicker-calendar tr {
         width: 100%;
         margin-left: 0;
     }    
+    .w200p {
+        width: 200%!important;
+    }
     
 }

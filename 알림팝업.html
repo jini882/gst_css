@@ -15,8 +15,8 @@
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/colorbox.css" />
     <link rel="stylesheet" type="text/css" href="./css/contents.css" />
-   
 </head>
 <body>
     <div id="wrap">
@@ -56,69 +56,9 @@
                 </div>
                 <div id="content_wrap">
                     <div id="contents">
-                        <table class="w200p list">
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>선택</th>
-                                    <th>수업명</th>
-                                    <th>수업구분</th>
-                                    <th>시작일자</th>
-                                    <th>종료일자</th>
-                                    <th>요일1</th>
-                                    <th>요일2</th>
-                                    <th>정원</th>
-                                    <th>신청인원</th>
-                                    <th>상세</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input type="checkbox" name="" id="check1"><label for="check1"></label></td>
-                                    <td style="width: 200px">최대 열글자되는 수업</td>
-                                    <td>최대 다섯글자</td>
-                                    <td>2021.10.11</td>
-                                    <td>2021.11.11</td>
-                                    <td>월</td>
-                                    <td>화</td>
-                                    <td>20명</td>
-                                    <td>12명</td>
-                                    <td><button class="btn white">상세보기</button></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="" id="check2"><label for="check2"></label></td>
-                                    <td>최대 열글자 되는 수업</td>
-                                    <td>최대 다섯글자</td>
-                                    <td>2021.10.11</td>
-                                    <td>2021.11.11</td>
-                                    <td>월</td>
-                                    <td>화</td>
-                                    <td>20명</td>
-                                    <td>12명</td>
-                                    <td><button class="btn white">상세보기</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="paging">
-                            <button><</button>
-                            <span class="on">1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <button>></button>
-                        </div>
+                        
+                        <a class="btn white sm inline-popup" href="#inline_content">팝업</a>
+
                     </div>
                 </div>
             </div>
@@ -133,8 +73,28 @@
                 </ul>
             </div>
         </div>
+
+<style>
+    .popup_alert {
+        padding: 30px 60px;
+        box-sizing: border-box;
+    }
+</style>
+
+        <!----- popup --------->
+        <div style='display:none'>
+			<div id='inline_content' style='background:#fff;'>
+                <!-- <div class="title">알림</div> -->
+                <div class="popup_alert">
+                    삭제하시겠습니까?
+                </div>
+			</div>
+		</div>
+        <!----- //popup --------->
+
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.colorbox.js"></script>
     <script>
         $(function() {
             $(".mobile_menu").on("click", function() {
@@ -149,6 +109,9 @@
                 $(this).children(".sub").toggle();
                 $(this).toggleClass("on");
             });
+
+            // popup
+            $(".inline-popup").colorbox({inline:true, transition:"none"});
         });
     </script>
 </body>

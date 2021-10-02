@@ -858,4 +858,8 @@ table.ui-datepicker-calendar tr {
     .search ul.ul_4col li:nth-last-child(-n+2) {
         border-bottom: 1px solid #ddd;
     }
+
+    video {
+        width: 100%;
+    }
 }

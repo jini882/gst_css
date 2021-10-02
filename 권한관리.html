@@ -15,6 +15,7 @@
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/colorbox.css" />
     <link rel="stylesheet" type="text/css" href="./css/contents.css" />
 </head>
 <body>
@@ -132,7 +133,7 @@
                             </div>
                             <div class="r_div clearfix">
                                 <div class="btn_area right">
-                                    <button class="btn sm white">추가</button>
+                                    <button class="btn sm white inline-popup" href="#inline_content">추가</button>
                                     <button class="btn sm white">저장</button>
                                     <button class="btn sm grey">삭제</button>
                                 </div>
@@ -186,8 +187,175 @@
                 </ul>
             </div>
         </div>
+
+        <!----- popup --------->
+        <div style='display:none'>
+			<div id='inline_content' style='background:#fff;'>
+                <div class="title">임상의 or 검사자 목록</div>
+                <div class="popup_content">
+                    <div class="search">
+                        <ul class="ul_5col clearfix">
+                            <li class="th">성명</li>
+                            <li class="td"><input type="text"></li>
+                            <li class="th">소속</li>
+                            <li class="td"><input type="text"></li>
+                            <li class="control"><button class="btn grey sm">조회하기</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="tbl_wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 5%">
+                                <col style="width: 15%">
+                                <col style="width: 5%">
+                                <col style="width: 15%">
+                                <col style="width: 15%">
+                                <col style="width: 5%">
+                                <col style="width: 19%">
+                                <col style="width: 19%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>선택</th>
+                                    <th>보호자명</th>
+                                    <th>성별</th>
+                                    <th>생년월일</th>
+                                    <th>아동명</th>
+                                    <th>아동성별</th>
+                                    <th>연락처</th>
+                                    <th>이메일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="check2">
+                                        <label for="check2"></label>
+                                    </td>
+                                    <td>김이나</td>
+                                    <td>여</td>
+                                    <td>2011.01.01</td>
+                                    <td>김석훈</td>
+                                    <td>남</td>
+                                    <td>010-1111-2222</td>
+                                    <td>abc@abc.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging">
+                        <button><</button>
+                        <span class="on">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <button>></button>
+                    </div>
+                    <div class="btn_area">
+                        <button class="btn">선택</button>
+                        <button class="btn grey">닫기</button>
+                    </div>
+                </div>
+			</div>
+		</div>
+        <!----- //popup --------->
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.colorbox.js"></script>
     <script>
         $(function() {
             $(".mobile_menu").on("click", function() {
@@ -202,6 +370,9 @@
                 $(this).children(".sub").toggle();
                 $(this).toggleClass("on");
             });
+
+            // popup
+            $(".inline-popup").colorbox({inline:true, transition:"none", width:"90%", height:"80%"});
         });
     </script>
 </body>

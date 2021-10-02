@@ -187,6 +187,9 @@ table button.btn.white {
 .w100p {
     width: 100% !important;
 }
+.align_left {
+    text-align: left;
+}
 /* ==============================================
    layout
    ============================================== */

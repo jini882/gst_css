@@ -22,6 +22,7 @@ table th {
     vertical-align: middle;
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
+    line-height: 20px;
 }
 table td {
     vertical-align: middle;
@@ -791,6 +792,13 @@ table.ui-datepicker-calendar tr {
     }
     .ul_16col li.td {
         width: calc(100% - 90px);
+    }
+    table.survey {
+        width: 200%;
+    }
+    .btn_area.left.survey {
+        margin-top: 20px;
+        margin-bottom: -10px;
     }
 
     /* ==============================================

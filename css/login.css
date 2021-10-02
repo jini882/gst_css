@@ -133,28 +133,28 @@ p.exp {
     height: 21px;
     margin-left: 7.5px;
 }
-.register form label.required {
+.ul_form label.required {
     background: url(../images/contents/icon_required.png) no-repeat;
     background-position: left 23px;
     background-size: 7px;
 }
-.register form p label.required {
+.ul_form p label.required {
     background-position: 0 4px;
     padding-left: 10px;
 }
-.register form p.caption {
+.ul_form p.caption {
     text-align: right;
     color: #666666;
 }
-.register form ul {
+ul.ul_form {
     border-top: 1px solid #333333;
     margin-top: 14.6px;
 }
-.register form ul li {
+ul.ul_form li {
     height: 58px;
     border-bottom: 1px solid #cccccc;
 }
-.register form  ul li label {
+ul.ul_form li label {
     display: inline-block;
     width: 110px;
     height: inherit;
@@ -163,29 +163,18 @@ p.exp {
     line-height: 53px;
     padding-left: 14px;
 }
-.register form ul li div label {
+ul.ul_form li div label {
     display: inline;
     vertical-align: middle;
     padding: 0 35px 0 9px;
 }
-.register form ul li div {
+ul.ul_form li div {
     display: inline-block;
     height: inherit;
     min-width: 250px;
     width: calc(100% - 115px);
 }
-/* form ul li div select {  
-    border: 1px solid #dddddd;
-    height: 36px;
-    width: 250px;
-    color: #999999;
-    padding: 0 10px;
-    font-size: 14px;
-}
-select::-ms-expand {
-    display: none;
-} */
-.register form ul li div button {
+ul.ul_form li div button {
     border: 1px solid #999999;
     height: 36px;
     font-size: 14px;
@@ -194,7 +183,7 @@ select::-ms-expand {
     margin-left: 5px;
     background-color: #ffffff;
 }
-.register form ul li div span {
+ul.ul_form li div span {
     display: inline-block;
     padding: 0 36px 0 12px;
 }

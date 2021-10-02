@@ -96,13 +96,11 @@ table input[type="checkbox"] {
    교육관리02
    ============================================== */
 ul.ul_4col {
-    /* display: table; */
     width: 100%;
 }
 ul.ul_4col>li {
     min-height: 51px;
     float: left;
-    /* width: 50%; */
     width: 100%;
     border-top: 1px solid #dddddd;
 }
@@ -129,10 +127,6 @@ ul.ul_4col>li>ul>li.th {
     padding-left: 20px;
 }
 ul.ul_4col>li>ul>li.td {
-    /* width: -webkit-calc(50% - 280px);
-    width: -moz-calc(50% - 280px); */
-    /* width: calc(50% - 280px); */
-    /* width: 50%; */
     padding: 7.5px 16px 0 20px;
 }
 ul.ul_4col>li>ul>li.td ul.persons {
@@ -153,7 +147,6 @@ ul.persons li span.person {
     border-radius: 18px;
     height: 36px;
     line-height: 36px;
-    
 }
 ul.persons li button.del {
     position: absolute;
@@ -220,6 +213,7 @@ popup
     background-color: #f4f4f4;
     /* height: 52px; */
     color: #333333;
+    vertical-align: top;
 }
 .search li.input {
     width: 35%;
@@ -249,6 +243,14 @@ table.tb_2col td {
 /* ==============================================
 검사결과 관리
 ============================================== */
+ul.ul_2col {
+    display: table;
+    columns: 2;
+}
+ul.ul_2col li {
+    display: table-cell;
+    float: inherit;
+}
 ul.ul_2col li.td {
     width: calc(100% - 140px);   
 }
@@ -688,10 +690,10 @@ table.ui-datepicker-calendar tr {
     검사결과 관리
     ============================================== */
     .search ul.ul_4col li {
-        border-top: 1px solid #f4f4f4;
+        border-top: 1px solid #ddd;
     }
     .search ul.ul_4col li:nth-last-child(-n+2) {
-        border-bottom: 1px solid #f4f4f4;
+        border-bottom: 1px solid #ddd;
     }
     .search ul.ul_4col li.th, .search ul.ul_2col li.th {
         width: 90px;
@@ -847,5 +849,13 @@ table.ui-datepicker-calendar tr {
     .w200p {
         width: 200%!important;
     }
-    
+    /* ==============================================
+    공지사항
+    ============================================== */
+    .search ul.ul_4col li:nth-last-child(-n+4) {
+        border-bottom: none;
+    }
+    .search ul.ul_4col li:nth-last-child(-n+2) {
+        border-bottom: 1px solid #ddd;
+    }
 }

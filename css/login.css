@@ -293,29 +293,29 @@ ul.ul_form li div span {
     p.title {
         margin-bottom: 22px;
     }
-    .register form ul li {
+    ul.ul_form li {
         height: 52px;
     }
-    .register form ul  li label {
+    ul.ul_form  li label {
         width: 90px;
         padding-left: 10px;
     }
-    .register form ul li div {
+    ul.ul_form li div {
         width: calc(100% - 100px);
     }
-    .register form ul li input[type=text].userid {
+    ul.ul_form li input[type=text].userid {
         width: calc(100% - 77px);
     }
-    .register form ul li div button {
+    ul.ul_form li div button {
         height: 36px;
         vertical-align: bottom;
         margin-left: 0;
         padding: 0;
     }
-    .register form ul li input[type=text].addr {
+    ul.ul_form li input[type=text].addr {
         width: calc(100% - 53px);
     }
-    .register form ul li div span {
+    ul.ul_form li div span {
         display: none;
     }
     .filebox label {
